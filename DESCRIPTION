@@ -1,0 +1,23 @@
+Package: five38clubrankings
+Type: Package
+Title:  Soccer Club Rankings from 538
+Version: 0.1.0
+Authors@R: person("Michael", "Clark", role = c("aut", "cre"), email = "micl@umich.edu")
+Maintainer: Michael Clark <micl@umich.edu>
+Description: Download the current soccer club rankings from 538.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/m-clark/five38clubrankings,  https://m-clark.github.io/five38clubrankings
+BugReports: https://github.com/m-clark/five38clubrankings/issues
+Year: 2018
+RoxygenNote: 6.0.1
+Depends:
+    R (>= 3.4.0)
+Imports:
+  magrittr,
+  rvest,
+  xml2,
+  dplyr,
+  readr
+Suggests: testthat
