@@ -1,4 +1,7 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+[![Build
+Status](https://travis-ci.org/m-clark/tidyext.svg?branch=master)](https://travis-ci.org/m-clark/tidyext)
+
 five38clubrankings
 ==================
 
@@ -8,4 +11,4 @@ and additionally does some summary by league and country. You can get
 the csv at
 <https://github.com/fivethirtyeight/data/tree/master/soccer-spi>, but
 that doesn’t have country or one-week change. The main function is
-get\_club\_rankings.
+`get_club_rankings`.
