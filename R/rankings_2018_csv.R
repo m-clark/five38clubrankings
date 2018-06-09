@@ -1,6 +1,6 @@
 #' Football club rankings
 #'
-#' Football/soccer club rankings as provided by 538.
+#' @details Football/soccer club rankings as provided by 538 around June of 2018.
 #'
 #' @format A data frame based on the csv or the website scrape.
 #'

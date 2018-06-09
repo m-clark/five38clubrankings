@@ -18,11 +18,13 @@ Download soccer club rankings as provided by 538.
 Download soccer club rankings from 538
 }
 \details{
-This uses the \href{https://github.com/hadley/rvest}{rvest} package to download football club rankings as
-  provided by 538.  It has one argument, whether you want to use their API to
-  get the `*.csv`, or not.  It is FALSE by default, as country and one-week
-  change are available from the table on their website. The \code{\link[five38clubrankings]{country_averages}}
-  function will not work if you use the csv.
+This uses the \href{https://github.com/hadley/rvest}{rvest} package
+  to download football club rankings as provided by 538.  It has one
+  argument, whether you want to use their API to get the `*.csv`, or not.  It
+  is FALSE by default, as country and one-week change are available from the
+  table on their website. As a result, the
+  \code{\link[five38clubrankings]{get_country_averages}} and \code{\link[five38clubrankings]{get_league_averages}} function will not
+  work if you use the csv rankings.
 }
 \examples{
 \dontrun{

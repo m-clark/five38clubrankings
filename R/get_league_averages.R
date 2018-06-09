@@ -11,15 +11,17 @@
 #' @return A data frame of league rankings
 #' @examples
 #' library(five38clubrankings)
-#' league_averages(rankings_2018)
+#' get_league_averages(rankings_2018)
 #' @importFrom dplyr group_by summarise ungroup mutate arrange desc filter
 #' @export
 #'
-league_averages <- function(rankings, drop_leagues=TRUE) {
+get_league_averages <- function(rankings, drop_leagues=TRUE) {
   if(drop_leagues)
-    rankings <- dplyr::filter(rankings, ! league %in% c('Champions League', 'Europa League'))
+    rankings <- rankings %>%
+      dplyr::filter(! league %in% c('Champions League', 'Europa League'))
+
   rankings %>%
-    dplyr::group_by(league) %>%
+    dplyr::group_by(country, league) %>%
     dplyr::summarise(off_rating = mean(off_rating),
                      def_rating = mean(def_rating),
                      spi = mean(spi),

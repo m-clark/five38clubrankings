@@ -12,6 +12,9 @@
 rankings_2018_csv
 }
 \description{
-Football/soccer club rankings as provided by 538.
+Football club rankings
+}
+\details{
+Football/soccer club rankings as provided by 538 around June of 2018.
 }
 \keyword{datasets}

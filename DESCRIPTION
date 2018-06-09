@@ -1,7 +1,7 @@
 Package: five38clubrankings
 Type: Package
-Title:  Soccer Club Rankings from 538
-Version: 0.1.0
+Title: Soccer Club Rankings from 538
+Version: 0.1.1
 Authors@R: person("Michael", "Clark", role = c("aut", "cre"), email = "micl@umich.edu")
 Maintainer: Michael Clark <micl@umich.edu>
 Description: Download the current soccer club rankings from 538.
