@@ -1,10 +1,10 @@
-<!-- README.md is generated from README.Rmd. Please edit that file -->
 [![Build
 Status](https://travis-ci.org/m-clark/five38clubrankings.svg?branch=master)](https://travis-ci.org/m-clark/five38clubrankings)
 [![codecov](https://codecov.io/gh/m-clark/five38clubrankings/branch/master/graph/badge.svg)](https://codecov.io/gh/m-clark/five38clubrankings)
+[![AppVeyor Build
+Status](https://ci.appveyor.com/api/projects/status/github/m-clark/five38clubrankings?branch=master&svg=true)](https://ci.appveyor.com/project/m-clark/five38clubrankings)
 
-five38clubrankings
-------------------
+# five38clubrankings
 
 This package just grabs the table located at
 <https://projects.fivethirtyeight.com/global-club-soccer-rankings/>, and

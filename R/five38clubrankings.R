@@ -7,7 +7,7 @@
 #' doesn't have country or one-week change. The main function is
 #' \code{get_club_rankings}.
 #' @docType package
-#' @name five38clubrankings
+#' @name five38clubrankings-package
 NULL
 
 

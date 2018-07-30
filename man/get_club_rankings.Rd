@@ -14,8 +14,6 @@ A data frame of the rankings
 }
 \description{
 Download soccer club rankings as provided by 538.
-
-Download soccer club rankings from 538
 }
 \details{
 This uses the \href{https://github.com/hadley/rvest}{rvest} package

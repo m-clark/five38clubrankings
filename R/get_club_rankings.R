@@ -1,9 +1,9 @@
 #' Get the current rankings
+#'
 #' @description Download soccer club rankings as provided by 538.
 #'
 #' @param csv  See details.
 #'
-#' @description Download soccer club rankings from 538
 #' @details This uses the \href{https://github.com/hadley/rvest}{rvest} package
 #'   to download football club rankings as provided by 538.  It has one
 #'   argument, whether you want to use their API to get the `*.csv`, or not.  It
