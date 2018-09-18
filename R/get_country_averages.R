@@ -21,15 +21,15 @@ get_country_averages <- function(rankings,
                                  ) {
   if (drop_countries)
     rankings <- rankings %>%
-      dplyr::filter(! country %in% c('Champions country', 'Europa country'))
+      dplyr::filter(country != '')
 
   if (top_tier_only)
     rankings <- rankings %>%
       filter(! league %in% c('La Liga 2', '2. Bundesliga', 'Ligue 2',
-                             'Championship', 'Serie B'))
+                             'Championship', 'League One', 'League Two',
+                             'Serie B'))
 
     rankings %>%
-      dplyr::filter(country != '') %>%
       dplyr::group_by(country) %>%
       dplyr::summarise(off_rating = mean(off_rating),
                        def_rating = mean(def_rating),

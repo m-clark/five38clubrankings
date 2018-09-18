@@ -11,7 +11,7 @@ get_league_averages(rankings, drop_leagues = TRUE)
 
 \item{drop_leagues}{Drop some miscellaneous teams that made it to Champions
 or Europa League but whose domestic league is not included. Default is
-true.}
+TRUE.}
 }
 \value{
 A data frame of league rankings

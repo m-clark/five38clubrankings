@@ -11,13 +11,12 @@ LazyData: true
 URL: https://github.com/m-clark/five38clubrankings
 BugReports: https://github.com/m-clark/five38clubrankings/issues
 Year: 2018
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0
 Depends:
     R (>= 3.4.0)
 Imports:
   magrittr,
   rvest,
   xml2,
-  dplyr,
-  readr
+  dplyr
 Suggests: testthat

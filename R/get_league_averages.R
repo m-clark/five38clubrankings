@@ -4,7 +4,7 @@
 #' @param rankings Rankings created by \code{get_club_rankings}
 #' @param drop_leagues Drop some miscellaneous teams that made it to Champions
 #'   or Europa League but whose domestic league is not included. Default is
-#'   true.
+#'   TRUE.
 #'
 #' @details Takes the rankings you create with \code{get_club_rankings} and gets
 #'   league averages.
@@ -17,8 +17,9 @@
 #'
 get_league_averages <- function(rankings, drop_leagues=TRUE) {
   if(drop_leagues)
+    # countries for drop_leagues will have no country
     rankings <- rankings %>%
-      dplyr::filter(! league %in% c('Champions League', 'Europa League'))
+      dplyr::filter(country != '')
 
   rankings %>%
     dplyr::group_by(country, league) %>%

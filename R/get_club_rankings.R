@@ -17,7 +17,6 @@
 #' @importFrom xml2 read_html
 #' @importFrom magrittr "%>%"
 #' @importFrom dplyr mutate
-#' @importFrom readr read_csv
 #' @examples
 #' \dontrun{
 #' get_club_rankings()
@@ -26,7 +25,7 @@
 get_club_rankings <- function(csv = FALSE) {
 
   if (csv)
-    return(readr::read_csv('https://projects.fivethirtyeight.com/soccer-api/club/spi_global_rankings.csv'))
+    return(read.csv('https://projects.fivethirtyeight.com/soccer-api/club/spi_global_rankings.csv'))
 
   init <- xml2::read_html('https://projects.fivethirtyeight.com/global-club-soccer-rankings/')
 

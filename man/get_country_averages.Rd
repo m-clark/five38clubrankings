@@ -4,7 +4,8 @@
 \alias{get_country_averages}
 \title{Get country averages}
 \usage{
-get_country_averages(rankings, drop_countries = TRUE, top_tier_only = TRUE)
+get_country_averages(rankings, drop_countries = TRUE,
+  top_tier_only = TRUE)
 }
 \arguments{
 \item{rankings}{Rankings created by \code{get_club_rankings}}
