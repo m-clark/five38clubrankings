@@ -10,7 +10,7 @@ output:
 vignette: >
   %\VignetteIndexEntry{Vignette Title}
   %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
+  \usepackage[utf8]{inputenc}
 ---
 
 ```{r setup, include=FALSE, cache=FALSE}
@@ -30,9 +30,9 @@ knitr::opts_chunk$set(echo = T, message=F, warning=F, error=F, collapse = TRUE,
 
 ### Installation
 
-Use the devtools to install the package from GitHub.
+Use the `devtools` package to install this package from GitHub.
 
-```{r, eval=FALSE}
+```{r install, eval=FALSE}
 devtools::install_github('m-clark/five38clubrankings')
 ```
 
@@ -41,16 +41,22 @@ devtools::install_github('m-clark/five38clubrankings')
 
 The main function gets the club rankings, while others will use dplyr to get by-country and by-league averages.
 
-```{r, eval=FALSE}
+```{r get_ranks, eval=FALSE}
 library(five38clubrankings)
 rankings_2018 = get_club_rankings()
 ```
 
-```{r, echo=-(1:2)}
+```{r get_country, echo=-(1:2)}
 library(five38clubrankings)
 data("rankings_2018")
 get_country_averages(rankings_2018)
+```
+
+
+```{r get_league}
 get_league_averages(rankings_2018)
 ```
+
+
 
 

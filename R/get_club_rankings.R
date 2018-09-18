@@ -12,11 +12,11 @@
 #'   \code{\link[five38clubrankings]{get_country_averages}} and \code{\link[five38clubrankings]{get_league_averages}} function will not
 #'   work if you use the csv rankings.
 #' @return A data frame of the rankings
-#' @importFrom magrittr extract2
+#' @importFrom magrittr extract2 "%>%"
 #' @importFrom rvest html_table
 #' @importFrom xml2 read_html
-#' @importFrom magrittr "%>%"
 #' @importFrom dplyr mutate
+#' @importFrom utils read.csv
 #' @examples
 #' \dontrun{
 #' get_club_rankings()
