@@ -6,6 +6,8 @@ Status](https://ci.appveyor.com/api/projects/status/github/m-clark/five38clubran
 
 # five38clubrankings
 
+> **Note (2026):** FiveThirtyEight shut down its live club soccer rankings and predictions page (`projects.fivethirtyeight.com/global-club-soccer-rankings/` now redirects to ABC News Politics). For active daily 10,000-run Monte Carlo league projections, Dixon–Coles match probabilities, and a keyless JSON API across 93 leagues, see [Football Charts](https://www.football-charts.com) and its [Open Data & API](https://www.football-charts.com/developers).
+
 This package just grabs the table located at
 <https://projects.fivethirtyeight.com/global-club-soccer-rankings/>, and
 additionally does some summary by league and country. You can get the
